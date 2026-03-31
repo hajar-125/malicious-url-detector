@@ -128,20 +128,7 @@ curl -X POST http://localhost:8000/predict \
 
 **Interactive docs:** visit `http://localhost:8000/docs` for the auto-generated Swagger UI.
 
----
 
-## 📊 Model performance
-
-| Metric | Score |
-|--------|-------|
-| Accuracy | ~95% |
-| Precision | ~94% |
-| Recall | ~96% |
-| F1 Score | ~95% |
-
-> Evaluated on a held-out test set of 20,000 URLs.
-
----
 
 ## 🛠 Tech stack
 
@@ -150,7 +137,7 @@ curl -X POST http://localhost:8000/predict \
 | Language | Python 3.9 |
 | Data processing | Pandas, NumPy |
 | Feature engineering | Custom lexical module, `python-whois` |
-| Machine learning | Scikit-learn |
+| Machine learning | XGBoost, Scikit-learn |
 | API | FastAPI, Uvicorn |
 | Containerization | Docker |
 
